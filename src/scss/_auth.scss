@@ -1,0 +1,67 @@
+.auth-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      color: var(--primary-color);
+      margin-bottom: 20px;
+      font-size: 2.25rem;
+    }
+  }
+  // .auth-form {
+  //   // box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  //   padding: 2rem 2rem 0.5rem 2rem;
+  //   border-radius: 2rem;
+  //   /* From https://css.glass */
+  //   background: rgba(255, 255, 255, 0.1);
+  //   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  //   backdrop-filter: blur(5px);
+  //   -webkit-backdrop-filter: blur(5px);
+  // }
+  .input-group {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    z-index: 200;
+  }
+  .input-group input {
+    padding-left: 10px;
+    border: 0;
+    outline: 0;
+    height: 40px;
+    width: 300px;
+    background-color: transparent;
+  }
+  .input-group label {
+    position: absolute;
+    top: 8px;
+    left: 13px;
+    z-index: 999;
+    background-color: transparent;
+    padding: 0 4px;
+    transition-duration: 0.3s;
+  }
+  .submit-btn {
+    color: white;
+    background-color: var(--primary-color);
+    width: 40%;
+    height: 37px;
+    border: 0;
+    border-radius: 0.5rem;
+  }
+  .submit-btn:hover {
+    color: var(--primary-color) !important;
+    background-color: transparent !important;
+    border: 1px solid var(--primary-color) !important;
+  }
+  
+  .input-group input:focus ~ label,
+  .input-group input:not(:placeholder-shown) ~ label {
+    top: -11px;
+    font-size: 14px;
+    color: var(--primary-color);
+    background-color: white;
+  }
+  

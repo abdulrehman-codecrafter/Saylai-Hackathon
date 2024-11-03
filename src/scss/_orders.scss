@@ -1,0 +1,31 @@
+.orders-container {
+  padding: 20px;
+}
+
+.order-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.order-status {
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.ant-card {
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s;
+}
+
+.ant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .orders-container {
+    padding: 10px;
+  }
+}
