@@ -7,6 +7,7 @@ import { Toaster, toast } from "sonner";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import  { ItemsContext } from "../../../Contexts/ItemContext";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const {restaurantItems}=useContext(ItemsContext)
@@ -44,7 +45,7 @@ export default function Home() {
               data-aos="fade-right"
               data-aos-duration="1600"
             >
-              <button className="btn">Get Started</button>
+              <Link to="/menu" className="btn btn-warning">Get Started</Link>
             </div>
           </div>
           <div className="hero_img" data-aos="zoom-in" data-aos-duration="1400">

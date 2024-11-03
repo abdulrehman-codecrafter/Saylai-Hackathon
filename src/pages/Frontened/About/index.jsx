@@ -15,6 +15,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 export default function About() {
   useEffect(() => {
@@ -35,7 +36,7 @@ export default function About() {
               nutrition, ensuring every bite is both satisfying and nourishing.
             </p>
             <div className="about-hero_btn" data-aos="fade-right" data-aos-duration="1600">
-              <button className="btn">Get Started</button>
+              <Link to="/menu" className="btn btn-warning text-white">Get Started</Link>
             </div>
           </div>
           <div className="about-hero_img" data-aos="zoom-in" data-aos-duration="1400">
@@ -60,9 +61,7 @@ export default function About() {
               expertise, innovation, and passion to create unforgettable dining
               experiences that redefine gastronomy.
             </p>
-            {/* <div className="checkox-content">
-
-          </div> */}
+          
           </div>
           <div className="chef-img" data-aos="fade-left"  data-aos-duration="1000">
             <img src={chefImg} alt="" />

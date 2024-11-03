@@ -15,7 +15,7 @@ export default function BannerCard({data}) {
         </div>
         <h4>{data.title}</h4>
         <p className="text-secondary">{data.description}</p>
-        <Link className="text-decoration-none" style={{color:"#fc7f09"}}>
+        <Link to="/menu" className="text-decoration-none" style={{color:"#fc7f09"}}>
             Explore More &nbsp; <FaArrowRight />
         </Link>
     </div>
